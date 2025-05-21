@@ -1,0 +1,264 @@
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  .ad{
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    img{
+      object-fit: cover;
+      height: inherit;
+      width: inherit;
+    }
+  }
+  .main-head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    margin-top: 10px;
+    .digi-icons{
+      height: 40px;
+      width: 200px;
+      margin-left: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+
+
+    }
+    .search-box{
+      display: flex;
+      align-items: center;
+      width: 400px;
+      height: 45px;
+      position: relative;
+      flex: 1;
+      margin-left: 350px;
+      
+      .search{
+        
+        padding-right: 50px;
+        width: 600px;
+        height: inherit;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        flex: 1;
+        border-radius: 6px;
+        border: none;
+        background-color: rgba(244, 244, 244, 0.877);
+      }
+      .search::placeholder{
+        font-size:12px;
+        font-weight: 500;
+        color: rgb(152, 151, 151);
+        font-family: var(--font);
+      }
+       .search-icon{
+        position: absolute;
+        fill: rgb(154, 154, 154); 
+        cursor: pointer;
+        border: none;
+        border-radius: 20%;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        right: 10px;
+      
+      }
+    }
+    .left-buttons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 270px;
+      height: 45px;
+      
+      
+      .bell{
+        margin-left: 40px;
+        width: 20px;
+        height: inherit;
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+        width: 130px;
+        height: inherit;
+        margin-left: 20px;
+        
+        
+        p{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2px;
+          width: inherit;
+          height: inherit;
+          border: 1px;
+          border-radius: 7px;
+          border-style: solid;
+          border-color: lightgrey;
+          color: rgb(25, 25, 25);
+          font-family: var(--font);
+          font-weight: 600;
+          font-size: 12px;
+          text-align: center;
+
+          span{
+            font-weight: 600;
+            font-size: 15px;
+            margin: 4px;
+          }
+          .enter-icon{
+            height: inherit;
+            margin-left: 6px;
+            path{
+              fill: rgb(86, 85, 85);
+            }
+          }
+          
+        }
+      }
+    .line{
+        color: lightgray;
+        margin-left: 10px;
+        margin-right: 5px;
+        font-size: 30px;
+      }
+    svg path{
+      fill: rgb(71, 71, 71);
+      cursor: pointer;
+    }     
+    }
+  }
+  .down-header{
+      width: 100%;
+      height: 32px; 
+      margin-right: 10px;
+    .menu{
+      width: 100%;
+      height: 32px;
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      
+      
+    .right-menu{
+      
+      cursor: pointer;
+      display: flex;
+      
+      font-size: 13px;
+      font-family: var(--font);
+      color: rgb(67, 67, 67);
+      font-weight: 600;
+
+    }
+    span{
+      color: lightgray;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+    .middle-menu{
+      width: 63%;
+      height: inherit;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 12px;
+      
+      a{
+        width: fit-content;
+        height: 32px;
+        font-family: var(--font);
+        color: rgb(113, 113, 113);
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        text-decoration: none;
+        transition: all 0.1s ease;
+        
+        svg {
+          width: 22px ;
+          height: 22px !important;
+          path{
+            fill: gray;
+          }
+          
+          
+        }
+      }
+      a:hover{
+        border-bottom: 2px solid rgb(217, 1, 1);
+        border-bottom-left-radius:2px ;
+        border-bottom-right-radius: 2px;
+      }
+
+      
+    }
+    }
+    .left-menu{
+      
+      width: 175px;
+      height: 35px;
+      position: relative;
+      margin-right: 130px;
+      background-color: rgb(249, 241, 227);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      p{
+        margin-top: 8px;
+        margin-right: 24px;
+        text-align: center;
+        font-family: var(--font);
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(245, 127, 23);
+        
+        
+      }
+      svg{
+        width: 15px;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        path{
+          fill: rgb(245, 127, 23);
+        }
+      }
+      .city-text{
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 40px;
+        left: 0px;
+        overflow: hidden;
+        border-radius: 4px;
+        background-color: rgb(71, 72, 72);
+        
+        p{
+          
+          text-align: start;
+          font-family: var(--font);
+          color: white;
+          
+        }
+      }
+      &:hover .city-text{
+        width: 300px;
+        height: 50px;
+      }
+      
+
+    }
+  }
+}

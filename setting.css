@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --font:yekan;
+  
+}
+
+html,body{
+  direction: rtl;
+}
+.wrapper{
+  width: 100%;
+}
+@font-face {
+  font-family: yekan;
+  src: url(/font/transfonter.org-20250324-163855/IRANYekanWeb.eot);
+  src: url(/font/transfonter.org-20250324-163855/IRANYekanWeb.ttf);
+  src: url(/font/transfonter.org-20250324-163855/IRANYekanWeb.woff);
+  src: url(/font/transfonter.org-20250324-163855/IRANYekanWeb.woff2);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+::-webkit-scrollbar{
+  width: 6px;
+
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 0;
+  background: #c0c0c0;
+  height: 6px;
+}
+svg{
+  all:unset;
+  vertical-align: middle;
+  display: inline-block;
+  fill:currentColor;
+}
